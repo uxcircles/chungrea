@@ -17,7 +17,7 @@ except ImportError:  # pip install opencc-python-reimplemented
 
 BUILD = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(BUILD)
-V = "1"  # cache-bust: bump on every CSS/JS change
+V = "2"  # cache-bust: bump on every CSS/JS change
 
 LANG = "en"
 
@@ -192,25 +192,21 @@ def footer(prefix, pg, slug):
 # ------------------------------------------------------------------ the letter (hero object)
 def letter():
     return f'''<div class="letter" id="letter">
-  <div class="letter-top">
-    <p class="letter-from">{L("Worksheet", "工作紙")} · Chung &amp; Rea</p>
-    <svg class="letter-stamp" viewBox="0 0 100 96" role="img" aria-label="{L("Chung and Rea stamp", "Chung &amp; Rea 印章")}"><path d="M50 3 97 37 79 93H21L3 37Z"/><text x="50" y="58" text-anchor="middle">C&amp;R</text><text x="50" y="76" text-anchor="middle" class="st-s">GLASGOW</text></svg>
-  </div>
   <h2 class="letter-title">{L("Your refusal letter, in three lines", "你的拒絕信，三行看清楚")}</h2>
   <form class="letter-form" novalidate>
     <div class="ln">
-      <label for="d-date"><span class="no">1</span>{L("Date the decision was sent", "決定的寄出日期")}</label>
+      <label for="d-date">{L("Date the decision was sent", "決定的寄出日期")}</label>
       <input type="date" id="d-date" name="date" required>
     </div>
     <fieldset class="ln">
-      <legend><span class="no">2</span>{L("Where are you now?", "你現在身在何處？")}</legend>
+      <legend>{L("Where are you now?", "你現在身在何處？")}</legend>
       <div class="seg">
         <label><input type="radio" name="where" value="14" checked><span>{L("In the UK", "在英國")}</span></label>
         <label><input type="radio" name="where" value="28"><span>{L("Outside the UK", "在英國境外")}</span></label>
       </div>
     </fieldset>
     <div class="ln ln-out" aria-live="polite">
-      <p class="out-label"><span class="no">3</span>{L("Appeal form usually due by", "上訴表格一般須於此日前送達")}</p>
+      <p class="out-label">{L("Appeal form usually due by", "上訴表格一般須於此日前送達")}</p>
       <p class="out" id="d-out"><span class="out-empty">{L("Enter the date above", "請先輸入上方日期")}</span></p>
       <p class="out-note" id="d-note"></p>
     </div>
@@ -322,7 +318,6 @@ def page_home(prefix, pg):
       <h1>{L("Bring the letter to Washington Street", "收到內政部的信，帶來 Washington Street 給我們看")}</h1>
       <p class="lede">{L("Asylum, immigration, deportation and judicial review solicitors in Glasgow city centre. Legal aid for those who qualify, and a solicitor who can talk it through in English, Cantonese or Mandarin.",
                          "格拉斯哥市中心的庇護、移民、遞解出境及司法覆核律師。合資格者可申請法律援助，並可用英語、廣東話或普通話與律師詳談。")}</p>
-      <p class="hero-phone"><a href="tel:{TEL}">{PHONE}</a><span>{L("3 minutes from Anderston station", "距 Anderston 站步行 3 分鐘")}</span></p>
     </div>
     {letter()}
   </div>

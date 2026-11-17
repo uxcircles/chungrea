@@ -16,8 +16,8 @@
 <link rel="preload" href="../assets/fonts/young-serif.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../assets/fonts/schibsted-grotesk.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../assets/fonts/noto-serif-tc-700.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../assets/site.css?v=1">
-<script defer src="../assets/site.js?v=1"></script>
+<link rel="stylesheet" href="../assets/site.css?v=2">
+<script defer src="../assets/site.js?v=2"></script>
 </head>
 <body>
 <a class="skip" href="#main">跳至內容</a>
@@ -55,28 +55,23 @@
     <div class="hero-words">
       <h1>收到內政部的信，帶來 Washington Street 給我們看</h1>
       <p class="lede">格拉斯哥市中心的庇護、移民、遞解出境及司法覆核律師。合資格者可申請法律援助，並可用英語、廣東話或普通話與律師詳談。</p>
-      <p class="hero-phone"><a href="tel:+441412482204">0141 248 2204</a><span>距 Anderston 站步行 3 分鐘</span></p>
     </div>
     <div class="letter" id="letter">
-  <div class="letter-top">
-    <p class="letter-from">工作紙 · Chung &amp; Rea</p>
-    <svg class="letter-stamp" viewBox="0 0 100 96" role="img" aria-label="Chung &amp; Rea 印章"><path d="M50 3 97 37 79 93H21L3 37Z"/><text x="50" y="58" text-anchor="middle">C&amp;R</text><text x="50" y="76" text-anchor="middle" class="st-s">GLASGOW</text></svg>
-  </div>
   <h2 class="letter-title">你的拒絕信，三行看清楚</h2>
   <form class="letter-form" novalidate>
     <div class="ln">
-      <label for="d-date"><span class="no">1</span>決定的寄出日期</label>
+      <label for="d-date">決定的寄出日期</label>
       <input type="date" id="d-date" name="date" required>
     </div>
     <fieldset class="ln">
-      <legend><span class="no">2</span>你現在身在何處？</legend>
+      <legend>你現在身在何處？</legend>
       <div class="seg">
         <label><input type="radio" name="where" value="14" checked><span>在英國</span></label>
         <label><input type="radio" name="where" value="28"><span>在英國境外</span></label>
       </div>
     </fieldset>
     <div class="ln ln-out" aria-live="polite">
-      <p class="out-label"><span class="no">3</span>上訴表格一般須於此日前送達</p>
+      <p class="out-label">上訴表格一般須於此日前送達</p>
       <p class="out" id="d-out"><span class="out-empty">請先輸入上方日期</span></p>
       <p class="out-note" id="d-note"></p>
     </div>

@@ -2,7 +2,7 @@
 
     python3 _build/pages.py && python3 _build/fonts.py
 
-- Young Serif 400, Schibsted Grotesk 400-900, IBM Plex Mono 400/600: Google's Latin subset
+- Young Serif 400, Schibsted Grotesk 400-900: Google's Latin subset
 - Noto Serif TC/SC 700, Noto Sans TC/SC 400/700: only the characters used on the site
 """
 import glob, html, os, re, urllib.parse, urllib.request
@@ -48,8 +48,6 @@ def subset(family, w, text, name):
 if __name__ == "__main__":
     save("young-serif", get(latin_src(get(API + "family=Young+Serif&display=swap").decode())))
     save("schibsted-grotesk", get(latin_src(get(API + "family=Schibsted+Grotesk:wght@400..900&display=swap").decode())))
-    for w in (400, 600):
-        save(f"plex-mono-{w}", get(latin_src(get(API + f"family=IBM+Plex+Mono:wght@{w}&display=swap").decode())))
     for code, folder in (("tc", "zh"), ("sc", "sc")):
         text = cjk(folder)
         subset(f"Noto+Serif+{code.upper()}", 700, text, f"noto-serif-{code}-700")

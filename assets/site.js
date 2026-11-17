@@ -108,7 +108,7 @@
       const css = document.createElement('link'); css.rel = 'stylesheet'; css.href = root + 'assets/vendor/maplibre/maplibre-gl.css'; document.head.appendChild(css);
       const s1 = document.createElement('script'); s1.src = root + 'assets/vendor/maplibre/maplibre-gl.js';
       s1.onload = () => {
-        const s2 = document.createElement('script'); s2.src = root + 'assets/map.js?v=1';
+        const s2 = document.createElement('script'); s2.src = root + 'assets/map.js?v=2';
         s2.onload = () => { try { const map = window.crMap(box); map.on('load', () => box.querySelector('.map-fallback').style.visibility = 'hidden'); } catch (e) { /* keep the sketch */ } };
         document.head.appendChild(s2);
       };

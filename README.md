@@ -31,8 +31,8 @@ python3 _build/fonts.py      # 改過中文字後重新子集化字體
 ## 設計概念
 
 - **招牌元素：五角形。** 辦公室位於 Pentagon Centre，五角形用於標誌、印章、地圖圖釘、favicon、手機按鈕及 404 頁。
-- **Hero 類型：`document-object`。** 首屏是一張「拒絕信工作紙」：輸入信件寄出日期、選擇身在英國境內或境外，即時算出上訴表格一般須送達的日期（14 日或 28 日，週末順延）及剩餘日數，並可把期限帶入預約表格。標明「只屬估算，並非法律意見」。
-- **字體：** Young Serif（標題）、Schibsted Grotesk（內文）、IBM Plex Mono（工作紙及電話號碼）；中文用 Noto Serif / Sans TC 及 SC，只子集化網站用到的字。
+- **Hero 類型：`document-object`。**（第二版：去掉橫線紙、傾斜、印章、編號圈及等寬字體，畫面更簡潔） 首屏是一張「拒絕信工作紙」：輸入信件寄出日期、選擇身在英國境內或境外，即時算出上訴表格一般須送達的日期（14 日或 28 日，週末順延）及剩餘日數，並可把期限帶入預約表格。標明「只屬估算，並非法律意見」。
+- **字體：** Young Serif（標題）、Schibsted Grotesk（內文）；中文用 Noto Serif / Sans TC 及 SC，只子集化網站用到的字。
 - **顏色：** 法律援助藍 `#1f2a8f`（取自蘇格蘭法律援助委員會標誌）、格拉斯哥紅砂岩 `#a5442d`（市內維多利亞式建築）、紙白。
 - **標題：** "Bring the letter to Washington Street"／「收到內政部的信，帶來 Washington Street 給我們看」。
 - **與同類網站的分別：** 之前的律師網站（Chu & Company、Lu Oliphant、Lee & Kan）都是左文右圖／資料卡、Fraunces／Newsreader／Manrope 字體及斜體重點字；這個網站沒有照片、沒有拱形圖框、沒有斜體重點，首屏是一件可以使用的「文件」。
