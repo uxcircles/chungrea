@@ -17,7 +17,7 @@ except ImportError:  # pip install opencc-python-reimplemented
 
 BUILD = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(BUILD)
-V = "2"  # cache-bust: bump on every CSS/JS change
+V = "3"  # cache-bust: bump on every CSS/JS change
 
 LANG = "en"
 
@@ -122,7 +122,7 @@ def header(prefix, pg, slug):
 <a class="skip" href="#main">{L("Skip to content", "跳至內容")}</a>
 <div class="concept-bar" role="note">
   <div class="wrap concept-in">
-    <p><span class="concept-tag">{L("Concept", "概念")}</span><span>{L('Redesign concept. Not the <a href="' + OFFICIAL + '" target="_blank" rel="noopener">official Chung &amp; Rea website</a>.', '重新設計概念，並非 <a href="' + OFFICIAL + '" target="_blank" rel="noopener">Chung &amp; Rea 官方網站</a>。')}</span></p>
+    <p><span class="concept-tag">{L("Concept", "概念")}</span><span class="concept-long">{L('Redesign concept. Not the <a href="' + OFFICIAL + '" target="_blank" rel="noopener">official Chung &amp; Rea website</a>.', '重新設計概念，並非 <a href="' + OFFICIAL + '" target="_blank" rel="noopener">Chung &amp; Rea 官方網站</a>。')}</span></p>
     <a href="{UXC}" target="_blank" rel="noopener">{L("Designed by", "設計")} <strong>UX CIRCLES</strong> ↗</a>
   </div>
 </div>

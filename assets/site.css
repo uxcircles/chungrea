@@ -221,6 +221,9 @@ p { margin: 0 0 1em; }
   .foot-grid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 760px) {
+  .concept-long { display: none; }
+  .concept-in { flex-wrap: nowrap; padding: 6px 0; }
+  .concept-tag { margin-right: 0; }
   body { padding-bottom: 72px; }
   .mbar { display: grid; grid-template-columns: 1fr 1fr 1.6fr; position: fixed; inset: auto 0 0; z-index: 30; background: var(--ink); border-top: 1px solid #000; padding-bottom: env(safe-area-inset-bottom); }
   .mbar a { display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 60px; color: #fff; text-decoration: none; font-weight: 600; font-size: .95rem; }
