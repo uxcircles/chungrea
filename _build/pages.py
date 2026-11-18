@@ -123,7 +123,7 @@ def header(prefix, pg, slug):
 <div class="concept-bar" role="note">
   <div class="wrap concept-in">
     <p><span class="concept-tag">{L("Concept", "概念")}</span><span class="concept-long">{L('Redesign concept. Not the <a href="' + OFFICIAL + '" target="_blank" rel="noopener">official Chung &amp; Rea website</a>.', '重新設計概念，並非 <a href="' + OFFICIAL + '" target="_blank" rel="noopener">Chung &amp; Rea 官方網站</a>。')}</span></p>
-    <a href="{UXC}" target="_blank" rel="noopener">{L("Designed by", "設計")} <strong>UX CIRCLES</strong> ↗</a>
+    <a href="{UXC}" target="_blank" rel="noopener">{L("Designed by ", "設計：", "设计：")}<strong>UX CIRCLES</strong> ↗</a>
   </div>
 </div>
 <header class="site-head">
@@ -176,7 +176,7 @@ def footer(prefix, pg, slug):
   </div>
   <div class="wrap foot-concept">
     <p>{L('Unofficial redesign concept by <a href="' + UXC + '" target="_blank" rel="noopener">UX CIRCLES</a>. Information on this page is general and is not legal advice.',
-          '非官方重新設計概念，由 <a href="' + UXC + '" target="_blank" rel="noopener">UX CIRCLES</a> 製作。本網站內容只屬一般資料，並非法律意見。')}</p>
+          '非官方概念設計：<a href="' + UXC + '" target="_blank" rel="noopener">UX CIRCLES</a>。本網站內容只屬一般資料，並非法律意見。')}</p>
   </div>
 </footer>
 <nav class="mbar" aria-label="{L('Quick actions', '快速聯絡')}">
